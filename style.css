@@ -75,6 +75,11 @@ img {
   padding: 4rem 0 2rem;
 }
 
+
+.text-primary {
+  color: var(--primary-color);
+}
+
 .section--dark {
   background-color: var(--dark-color-light);
 }
@@ -133,7 +138,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--light-color);
+  color: var(--primary-color);
   font-family: var(--title-font);
   font-weight: 900;
   font-size: 1.5rem;
@@ -253,6 +258,14 @@ img {
 .about__data p {
     margin-bottom: var(--mb-2);
     line-height: 1.7;
+}
+    .about__data .section__title,
+.about__data .section__subtitle {
+  text-align: left; /* Alineamos los títulos a la izquierda */
+}
+
+.about__data .section__subtitle {
+  margin-bottom: var(--mb-2); /* Reducimos un poco el margen inferior del subtítulo */
 }
 
 /* ==================== FILOSOFÍA ==================== */
@@ -393,6 +406,19 @@ img {
         --h2-font-size: 1.5rem;
     }
 
+    .contact__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+     .about__container {
+        /* Definimos dos columnas: una para la imagen (35%) y otra para el texto (el resto) */
+        grid-template-columns: 35% 1fr; 
+        gap: 1rem; /* Reducimos el espacio entre imagen y texto en móvil */
+        align-items: center; /* Centramos verticalmente el contenido */
+        text-align: left; /* Alineamos el texto a la izquierda para mejor lectura */
+    }
+    
     .nav__menu {
         position: fixed;
         top: 0;
@@ -423,16 +449,11 @@ img {
         display: block;
     }
     
-    .about__container, .contact__container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
     .about__data {
         order: 2;
     }
     .about__img {
         order: 1;
-        margin: 0 auto;
     }
     
     .contact__form .btn {
