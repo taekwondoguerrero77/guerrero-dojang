@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guerrero Dojang - Escuela de Taekwondo Profesional</title>
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+
   <!-- Font Awesome (para iconos) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
   <header class="header">
     <nav class="nav container">
-      <a href="#" class="nav__logo">Guerrero Dojang</a>
+      <a href="index.html" class="nav__logo">
+        <img src="img/logo_sin_fondo2.png" alt="Guerrero Dojang Logo" class="nav__logo-img">
+        Guerrero Dojang
+      </a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
-          <li class="nav__item"><a href="#filosofia" class="nav__link">Filosofía</a></li>
+          <li class="nav__item"><a href="taekwondo.html" class="nav__link">Taekwondo</a></li>          
+          <li class="nav__item"><a href="maestro.html" class="nav__link">Maestro</a></li>
+          <li class="nav__item"><a href="ki.html" class="nav__link">KI</a></li>
           <li class="nav__item"><a href="#horarios" class="nav__link">Horarios</a></li>
-          <li class="nav__item"><a href="#galeria" class="nav__link">Galería</a></li>
-          <li class="nav__item"><a href="#contacto" class="nav__link btn">Inscríbete</a></li>
+          <li class="nav__item"><a href=galeria.html class="nav__link">Galería</a></li>
+          <li class="nav__item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfItOmhpL-rD-QSnYxrDyhHsrvAaZlq3GFf9M0bfdVKGmDlQw/viewform?pli=1" class="nav__link btn" target="_blank">Inscríbete</a></li>
         </ul>
         <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
       </div>
@@ -44,31 +51,36 @@
       <div class="hero__overlay"></div>
       <div class="hero__content container">
         <h1 class="hero__title">Forja tu carácter, domina tu cuerpo</h1>
-        <p class="hero__subtitle">Descubre el poder del Taekwondo en Guerrero Dojang. Más que un arte marcial, un camino de vida.</p>
+        <p class="hero__subtitle">Descubre el poder del Taekwondo en Guerrero Dojang. Más que un arte marcial, un camino
+          de vida.</p>
         <a href="#horarios" class="btn btn--hero">Ver Horarios</a>
       </div>
     </section>
 
-    <!-- ==================== NOSOTROS ==================== -->
-    <section id="nosotros" class="section section--dark">
-  <div class="container"> <!-- Añadimos el contenedor principal para centrarlo todo -->
-    <div class="about__container">
-      <img src="./img/maestro_miguel2.jpg" alt="Maestro de Taekwondo" class="about__img">
-      <div class="about__data">
-        <!-- Los títulos AHORA ESTÁN AQUÍ DENTRO -->
-        <h2 class="section__title">Nuestra Escuela</h2>
-        <p></p>
-        <span class="section__subtitle">Tradición y Modernidad</span>
-        <p>
-          En <strong class="text-primary">Guerrero Dojang</strong>, combinamos la enseñanza tradicional del Taekwondo con las técnicas de entrenamiento más modernas. Nuestro equipo de instructores certificados se dedica a fomentar valores como la disciplina, el respeto y la superación personal en un ambiente seguro y motivador para todas las edades.
-        </p>
-        <p>
-          Nuestra misión es guiar a cada estudiante en su camino marcial, ayudándole a alcanzar su máximo potencial físico y mental.
-        </p>
+    <!-- ==================== Taekwondo ==================== -->
+    <section id="Taekwondo" class="section section--dark">
+      <div class="container"> <!-- Añadimos el contenedor principal para centrarlo todo -->
+        <div class="about__container">
+          <img src="./img/maestro_miguel2.jpg" alt="Maestro de Taekwondo" class="about__img">
+          <div class="about__data">
+            <!-- Los títulos AHORA ESTÁN AQUÍ DENTRO -->
+            <h2 class="section__title">Nuestra Escuela</h2>
+            <p></p>
+            <span class="section__subtitle">Tradición y Modernidad</span>
+            <p>
+              En el Club Deportivo <strong class="text-primary">Guerrero Dojang</strong>, combinamos la enseñanza tradicional del
+              Taekwondo con las técnicas de entrenamiento más modernas. Nuestro equipo de instructores certificados se
+              dedica a fomentar valores como la disciplina, el respeto y la superación personal en un ambiente seguro y
+              motivador para todas las edades.
+            </p>
+            <p>
+              Nuestra misión es guiar a cada estudiante en su camino marcial, ayudándole a alcanzar su máximo potencial
+              físico y mental.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- ==================== FILOSOFÍA ==================== -->
     <section id="filosofia" class="section section--dark">
@@ -102,81 +114,83 @@
 
     <!-- ==================== HORARIOS Y PRECIOS ==================== -->
     <section id="horarios" class="section container">
-        <h2 class="section__title">Horarios y Precios</h2>
-        <span class="section__subtitle">Encuentra el plan perfecto para ti</span>
-        <div class="pricing__container">
-            <table class="pricing__table">
-                <thead>
-                    <tr>
-                        <th>Clase</th>
-                        <th>Edad</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Taekwondo Infantil</td>
-                        <td>6-11 años</td>
-                        <td>Lunes y Miércoles, 17:30 - 18:30</td>
-                    </tr>
-                    <tr>
-                        <td>Taekwondo Junior</td>
-                        <td>12-16 años</td>
-                        <td>Lunes y Miércoles 18:30 - 19:30</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    
-    <!-- ==================== GALERÍA ==================== -->
-    <section id="galeria" class="section container">
-        <h2 class="section__title">Nuestra Galería</h2>
-        <span class="section__subtitle">Momentos en el Dojang</span>
-        <div class="gallery__container">
-            <img src="https://via.placeholder.com/400x300.png?text=Patada+Alta" alt="Galería Taekwondo 1">
-            <img src="https://via.placeholder.com/400x300.png?text=Clase+Infantil" alt="Galería Taekwondo 2">
-            <img src="https://via.placeholder.com/400x300.png?text=Combate" alt="Galería Taekwondo 3">
-            <img src="https://via.placeholder.com/400x300.png?text=Meditación" alt="Galería Taekwondo 4">
-            <img src="https://via.placeholder.com/400x300.png?text=Equipo" alt="Galería Taekwondo 5">
-            <img src="https://via.placeholder.com/400x300.png?text=Técnica" alt="Galería Taekwondo 6">
-        </div>
+      <h2 class="section__title">Horarios</h2>
+      <span class="section__subtitle">Encuentra el plan perfecto para ti</span>
+      <div class="pricing__container">
+        <table class="pricing__table">
+          <thead>
+            <tr>
+              <th>Clase</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Taekwondo Infantil</td>
+              <td>Lunes y Miércoles, 17:30 - 18:30</td>
+            </tr>
+            <tr>
+              <td>Taekwondo Junior</td>
+              <td>Lunes y Miércoles 18:30 - 19:30</td>
+            </tr>
+            <tr>
+              <td>Taekwondo Adulto</td>
+              <td>Lunes y Miércoles 20:00 - 21:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
+    <!-- ==================== GALERÍA ==================== -->
+    <!-- <section id="galeria" class="section container">
+      <h2 class="section__title">Nuestra Galería</h2>
+      <span class="section__subtitle">Momentos en el Dojang</span>
+      <div class="gallery__container">
+        <img src="https://via.placeholder.com/400x300.png?text=Patada+Alta" alt="Galería Taekwondo 1">
+        <img src="https://via.placeholder.com/400x300.png?text=Clase+Infantil" alt="Galería Taekwondo 2">
+        <img src="https://via.placeholder.com/400x300.png?text=Combate" alt="Galería Taekwondo 3">
+        <img src="https://via.placeholder.com/400x300.png?text=Meditación" alt="Galería Taekwondo 4">
+        <img src="https://via.placeholder.com/400x300.png?text=Equipo" alt="Galería Taekwondo 5">
+        <img src="https://via.placeholder.com/400x300.png?text=Técnica" alt="Galería Taekwondo 6">
+      </div>
+    </section> -->
+
     <!-- ==================== CONTACTO ==================== -->
-    <section id="contacto" class="section section--dark">
-        <div class="container contact__container">
-            <div class="contact__data">
-                <h2 class="section__title">Contacto e Inscripción</h2>
-                <p>¿Listo para empezar tu camino? Rellena el formulario o contacta con nosotros directamente. ¡Tu primera clase es gratis!</p>
-                <div class="contact__info">
-                    <p><i class="fas fa-map-marker-alt"></i> Calle la Lonja, 51, Mancha Real, Jaén</p>
-                    <p><i class="fas fa-phone"></i> +34 600 123 456</p>
-                    <p><i class="fas fa-envelope"></i> clubguerrerodojang@gmail.com</p>
-                </div>
-            </div>
-            <form action="#" class="contact__form">
-                <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
-                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-                <textarea name="mensaje" placeholder="Déjanos un mensaje (opcional)"></textarea>
-                <button type="submit" class="btn">Solicitar Información</button>
-            </form>
+    <!-- <section id="contacto" class="section section--dark">
+      <div class="container contact__container">
+        <div class="contact__data">
+          <h2 class="section__title">Contacto e Inscripción</h2>
+          <p>¿Listo para empezar tu camino? Rellena el formulario o contacta con nosotros directamente. ¡Tu primera
+            clase es gratis!</p>
+          <div class="contact__info">
+            <p><i class="fas fa-map-marker-alt"></i> Calle la Lonja, 51, Mancha Real, Jaén</p>
+            <p><i class="fas fa-phone"></i> +34 600 123 456</p>
+            <p><i class="fas fa-envelope"></i> clubguerrerodojang@gmail.com</p>
+          </div>
         </div>
-    </section>
+        <form action="#" class="contact__form">
+          <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+          <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+          <textarea name="mensaje" placeholder="Déjanos un mensaje (opcional)"></textarea>
+          <button type="submit" class="btn">Solicitar Información</button>
+        </form>
+      </div>
+    </section> -->
   </main>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
-      <div class="container footer__container">
-          <p>&copy; 2025 Guerrero Dojang. Todos los derechos reservados.</p>
-          <div class="footer__social">
-              <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="footer__social-link"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a>
-          </div>
+    <div class="container footer__container">
+      <p>&copy; 2025 Guerrero Dojang. Todos los derechos reservados.</p>
+      <div class="footer__social">
+<a href="https://www.instagram.com/club_guerrerodojang_mancha_r?igsh=MXNpcXcxcGRnMWhyZw==" class="footer__social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1A2ggcv9Nd/" class="footer__social-link"><i class="fab fa-facebook" target="_blank"></i></a>
       </div>
+    </div>
   </footer>
-  
+
   <script src="main.js"></script>
 </body>
+
 </html>

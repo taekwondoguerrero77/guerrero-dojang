@@ -104,7 +104,8 @@ img {
   text-align: center;
   margin-bottom: var(--mb-3);
   color: var(--primary-color);
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
 .container {
@@ -143,6 +144,17 @@ img {
   font-weight: 900;
   font-size: 1.5rem;
   letter-spacing: 1px;
+}
+
+.nav__logo {
+  display: flex; /* Para alinear imagen y texto */
+  align-items: center;
+  gap: 0.5rem; /* Espacio entre el logo y el texto */
+}
+
+.nav__logo-img {
+  height: 40px; /* Ajusta la altura de tu logo como necesites */
+  width: auto;
 }
 
 .nav__menu {
@@ -186,6 +198,10 @@ img {
   cursor: pointer;
   color: var(--light-color);
   font-size: 1.5rem;
+}
+
+.nav__link.active-link {
+  color: var(--primary-color); /* Lo pone de color dorado */
 }
 
 /* ==================== HERO ==================== */
@@ -268,20 +284,45 @@ img {
   margin-bottom: var(--mb-2); /* Reducimos un poco el margen inferior del subtítulo */
 }
 
+.about__history {
+  /* La magia está aquí: le decimos que empiece en la columna 1 y termine en la última (-1) */
+  grid-column: 1 / -1; 
+  margin-top: 1rem; /* Añade un espacio para separarlo de la sección de arriba */
+}
+
+/* También vamos a hacer que los títulos dentro de este nuevo bloque se alineen a la izquierda */
+.about__history .section__subtitle {
+  text-align: left;
+}
+
+.about__img-container {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  margin-top: 1rem;
+}
+
+.about__img {
+  max-width: 100%; /* para que no se salga en móviles */
+  height: auto;
+}
+
+
 /* ==================== FILOSOFÍA ==================== */
 .filosofia__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 2rem; /* espacio entre tarjetas */
+  margin-top: 2rem;
 }
+
 .filosofia__card {
-    background-color: var(--dark-color);
-    padding: 2rem;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #333;
-    transition: transform 0.3s, box-shadow 0.3s;
+  background: #1e1e1e; /* ejemplo, ajusta a tu diseño */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+
 .filosofia__card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.5);
@@ -299,6 +340,8 @@ img {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .pricing__table th, .pricing__table td {
     padding: 1rem;
@@ -464,4 +507,8 @@ img {
         flex-direction: column;
         gap: 1.5rem;
     }
+
+    .filosofia__container {
+    grid-template-columns: 1fr; /* solo 1 columna en pantallas pequeñas */
+  }
 }

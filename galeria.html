@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guerrero Dojang - Escuela de Taekwondo Profesional</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome (para iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/logo_sin_fondo2.png" alt="Guerrero Dojang Logo" class="nav__logo-img">
+                Guerrero Dojang
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href=index.html class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="taekwondo.html" class="nav__link">Taekwondo</a></li>
+                    <li class="nav__item"><a href="maestro.html" class="nav__link">Maestro</a></li>
+                    <li class="nav__item"><a href="ki.html" class="nav__link">KI</a></li>
+                    <li class="nav__item"><a href="#horarios" class="nav__link">Horarios</a></li>
+                    <li class="nav__item"><a href=galeria.html class="nav__link">Galería</a></li>
+                    <li class="nav__item"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfItOmhpL-rD-QSnYxrDyhHsrvAaZlq3GFf9M0bfdVKGmDlQw/viewform?pli=1" class="nav__link btn" target="_blank">Inscríbete</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== Taekwondo ==================== -->
+        <section id="Taekwondo" class="section section--dark">
+            <div class="container"> <!-- Añadimos el contenedor principal para centrarlo todo -->
+                <h2 class="section__title">Nuestra Galería</h2>
+                <span class="section__subtitle">Momentos en el Dojang</span>
+                <div class="gallery__container">
+                    <img src="img/periodico.jpg" alt="Galería Taekwondo 1">
+                    <img src="img/cartel.jpg" alt="Galería Taekwondo 2">
+                    <video controls width="400">
+                        <source src="img/video.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <!-- <img src="https://via.placeholder.com/400x300.png?text=Meditación" alt="Galería Taekwondo 4">
+        <img src="https://via.placeholder.com/400x300.png?text=Equipo" alt="Galería Taekwondo 5">
+        <img src="https://via.placeholder.com/400x300.png?text=Técnica" alt="Galería Taekwondo 6"> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== HORARIOS Y PRECIOS ==================== -->
+        <section id="horarios" class="section container">
+            <h2 class="section__title">Horarios</h2>
+            <span class="section__subtitle">Encuentra el plan perfecto para ti</span>
+            <div class="pricing__container">
+                <table class="pricing__table">
+                    <thead>
+                        <tr>
+                            <th>Clase</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Taekwondo Infantil</td>
+                            <td>Lunes y Miércoles, 17:30 - 18:30</td>
+                        </tr>
+                        <tr>
+                            <td>Taekwondo Junior</td>
+                            <td>Lunes y Miércoles 18:30 - 19:30</td>
+                        </tr>
+                        <tr>
+                            <td>Taekwondo Adulto</td>
+                            <td>Lunes y Miércoles 20:00 - 21:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <p>&copy; 2025 Guerrero Dojang. Todos los derechos reservados.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/club_guerrerodojang_mancha_r?igsh=MXNpcXcxcGRnMWhyZw==" class="footer__social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/1A2ggcv9Nd/" class="footer__social-link"><i class="fab fa-facebook" target="_blank"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
